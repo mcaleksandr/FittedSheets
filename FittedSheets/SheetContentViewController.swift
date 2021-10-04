@@ -162,7 +162,7 @@ public class SheetContentViewController: UIViewController {
         self.contentTopConstraint?.isActive = true
     }
     
-    func updatePreferredHeight() {
+    public func updatePreferredHeight() {
         self.updateNavigationControllerHeight()
         let width = self.view.bounds.width > 0 ? self.view.bounds.width : UIScreen.main.bounds.width
         let oldPreferredHeight = self.preferredHeight
